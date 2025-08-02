@@ -1,0 +1,6 @@
+name: IPguard
+main: pom.xml.Main
+version: 1.3
+api-version: 1.21
+author: Tomas Hajnicik
+email: tomashajnicik@gmail.com

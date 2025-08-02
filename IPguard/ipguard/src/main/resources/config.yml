@@ -1,0 +1,16 @@
+allowed-countries:
+  - SK  
+  - CZ
+  - DE
+
+excluded-ips:
+  - 192.0.2.0
+  - 192.0.2.255
+
+
+# IPguard configuration file
+# Allowed countries for IPguard -- this list defines which countries are permitted to access the service.
+# Each country is represented by its ISO 3166-1 alpha-2 code.
+# For example, 'SK' for Slovakia, 'CZ' for Czech Republic, and 'DE' for Germany.
+# Excluded IPs -- this list defines specific IP addresses that are excluded from the allowed countries.
+# These IPs will be allowed to access the service, regardless of their country.
