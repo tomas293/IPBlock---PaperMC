@@ -20,17 +20,14 @@ public class Main extends JavaPlugin implements Listener {
     public void onEnable() {
         saveDefaultConfig();
 
-        // Ensure ip2location folder exists inside plugin data folder
         File ipFolder = new File(getDataFolder(), "ip2location");
         if (!ipFolder.exists()) ipFolder.mkdirs();
 
-        // Extract all required files if missing, with .txt and .CSV as specified
         saveResourceToFolder("ip2location/license.txt", ipFolder);
         saveResourceToFolder("ip2location/LICENSE-CC-BY-SA-4.0.txt", ipFolder);
         saveResourceToFolder("ip2location/README_LITE.txt", ipFolder);
         saveResourceToFolder("ip2location/IP2LOCATION-LITE-DB1.CSV", ipFolder);
 
-        // Load config data and IP ranges
         loadAllowedCountries();
         loadExcludedIPs();
         loadIPRanges(ipFolder);
