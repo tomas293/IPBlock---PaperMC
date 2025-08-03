@@ -1,16 +1,41 @@
-allowed-countries:
-  - SK  
+config-version: 2
+# DONT CHANGE THIS LINE
+# This is the version of the configuration file format.
+
+enabled: true
+#Whether the IPGuard service is enabled or not.
+# Set to true to enable the service, or false to disable it.
+
+log-level: INFO 
+#What sort of log level to use for the IPGuard service.
+# Options include: INFO, NONE
+
+allowed-countries:  
   - CZ
   - DE
 
+
+# Allowed countries for IPGuard -- this list defines which countries are permitted to access the service.
+# Each country is represented by its ISO 3166-1 alpha-2 code.
+# For example, 'SK' for Slovakia, 'CZ' for Czech Republic, and 'DE' for Germany.
 excluded-ips:
   - 192.0.2.0
   - 192.0.2.255
 
 
-# IPguard configuration file
-# Allowed countries for IPguard -- this list defines which countries are permitted to access the service.
-# Each country is represented by its ISO 3166-1 alpha-2 code.
-# For example, 'SK' for Slovakia, 'CZ' for Czech Republic, and 'DE' for Germany.
+
 # Excluded IPs -- this list defines specific IP addresses that are excluded from the allowed countries.
 # These IPs will be allowed to access the service, regardless of their country.
+# For example, 192.0.2.0 and 192.0.2.255 are excluded from country checks.
+# This is useful for internal services or specific users that need access regardless of their geographical location.
+Kick-message: "Access denied. Your IP address is not allowed to access this service."
+#Message displayed when a user's IP address is not allowed to access the service.
+# This message is shown to users whose IPs are not in the allowed countries or excluded IPs list.
+# It can be customized to provide more information or instructions to the user. 
+
+
+
+
+# IPGuard configuration file
+
+
