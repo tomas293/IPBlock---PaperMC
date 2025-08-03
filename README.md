@@ -1,6 +1,7 @@
 # IPGuard
+this plugin was built using [IP2Location]([https://www.ip2location.com/]).
 
-A simple PaperMC plugin that blocks players from countries you don't allow, using geolocation from IP2Location LITE.
+A simple PaperMC plugin that blocks players from countries you don't allow
 
 ## Features
 
