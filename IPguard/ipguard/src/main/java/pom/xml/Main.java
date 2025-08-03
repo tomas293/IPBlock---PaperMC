@@ -35,8 +35,9 @@ public class Main extends JavaPlugin implements Listener {
         
         // Check if the plugin is enabled in the config
         if (getConfig().getBoolean("disable", false)) {
-        getLogger().info("IPGuard was disabled in config. Shutting down silently :(");
-        return;}
+            getLogger().info("IPGuard was disabled in config. Shutting down silently :(");
+        return;
+    }
         
         // Load config data and IP ranges
         loadAllowedCountries();
@@ -130,6 +131,7 @@ public class Main extends JavaPlugin implements Listener {
     //    }
     //    return ipNum;
     //}
+    
     private long ipToLong(String ip) {
         String[] parts = ip.split("\\.");
         if (parts.length != 4) return -1;

@@ -2,9 +2,9 @@ config-version: 2
 # DONT CHANGE THIS LINE
 # This is the version of the configuration file format.
 
-enabled: true
+disable: true
 #Whether the IPGuard service is enabled or not.
-# Set to true to enable the service, or false to disable it.
+# Set to true to disable the service, or false to enable it.
 
 log-level: INFO 
 #What sort of log level to use for the IPGuard service.
